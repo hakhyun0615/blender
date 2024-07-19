@@ -45,7 +45,7 @@ def create_building(land_area, building_coverage_ratio, floor_area_ratio, height
     bpy.ops.object.join()
     
     # 결과 메쉬를 파일로 저장
-    file_path = f"{first_floor_area}_{number_of_floors}_{floor_height}.obj"
+    file_path = f"result/{first_floor_area}_{number_of_floors}_{floor_height}.obj"
     bpy.ops.wm.obj_export(filepath=file_path)
     print(f"Building created and saved as '{file_path}'")
 
